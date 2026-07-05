@@ -467,10 +467,13 @@ body {
   gap: 22px;
 }
 .mini-card {
+  display: block;
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   padding: 26px;
+  text-decoration: none;
+  color: inherit;
   transition: transform .25s ease, border-color .25s ease;
 }
 .mini-card:hover { transform: translateY(-6px); border-color: var(--accent); }
