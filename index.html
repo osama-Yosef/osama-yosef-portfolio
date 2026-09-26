@@ -4,11 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Osama Yosef — Flutter Developer</title>
-<meta name="description" content="Osama Yosef — Flutter Developer building production-grade mobile apps for business & industry." />
+<meta name="description" content="Osama Yosef — Flutter developer building production-grade business systems: factory operations, double-entry accounting, and a full store + repair platform on Supabase." />
+<meta name="theme-color" content="#0a0e17" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Osama Yosef — Flutter Developer" />
+<meta property="og:description" content="Production-grade Flutter apps for real businesses: Firebase, Supabase, PostgreSQL, Arabic-first (RTL) UIs on Android, Windows and the web." />
+<meta property="og:url" content="https://osama-yosef.github.io/osama-yosef-portfolio/" />
+<meta property="og:image" content="https://osama-yosef.github.io/osama-yosef-portfolio/assets/projects/mokoji/desktop-dashboard.webp" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -22,7 +30,7 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#top" class="logo">OY<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -30,7 +38,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a class="btn btn-ghost nav-cv" href="assets/docs/Osama_Yosef_CV.docx" download>Resume</a>
-    <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -43,9 +51,9 @@
       <h1>Osama Yosef</h1>
       <h2 class="typewriter"><span id="typewriter-text"></span><span class="cursor">|</span></h2>
       <p class="hero-desc">
-        I build production-grade cross-platform mobile apps that real businesses run on —
-        not tutorial projects. Currently powering the full digital operations of a metal
-        manufacturing factory, end to end.
+        I build production-grade Flutter systems that real businesses run on — not tutorial
+        projects. A factory's full order pipeline, a double-entry accounting system, and a
+        store + repair platform with its own back office, all Arabic-first and cross-platform.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -76,15 +84,24 @@
       <h2>Real problems. Real users. Real apps.</h2>
     </div>
     <div class="about-grid">
-      <p class="about-text reveal">
-        Flutter Developer with over a year of hands-on, professional experience building
-        cross-platform mobile applications that businesses actually depend on. I designed and
-        built <strong>app_alfardos</strong> from scratch — a full-scale factory management system
-        currently running in daily production at Al-Fardos Metal Factory, serving four different
-        user roles simultaneously. I'm comfortable owning a product end-to-end: architecture,
-        Firebase backend, real-time data sync, and the UI that ties it all together. I'm currently
-        finishing my Computer Science degree while freelancing and taking on new mobile projects.
-      </p>
+      <div class="about-text reveal">
+        <p>
+          Flutter developer with over a year of hands-on, professional experience building
+          multi-role business apps for Android, Windows and the web. I designed and built
+          <strong>Al-Fardos Factory</strong> from scratch — the order system a metal-processing
+          factory runs on every day, serving four user roles at once.
+        </p>
+        <p>
+          Since then I've gone deeper into the backend: <strong>Al-Fardos Management</strong>, an
+          accounting system where every operation is a balanced double-entry posting written in one
+          atomic transaction, and <strong>Mokoji</strong>, a store + repair platform whose permissions
+          live in PostgreSQL itself through Row Level Security.
+        </p>
+        <p>
+          I own products end-to-end — schema design, security rules, business logic, tests and the UI
+          that ties it together. Currently finishing my Computer Science degree while freelancing.
+        </p>
+      </div>
       <div class="stat-grid reveal">
         <div class="stat-card">
           <span class="stat-num" data-count="1">0</span><span class="stat-suffix">+</span>
@@ -92,15 +109,15 @@
         </div>
         <div class="stat-card">
           <span class="stat-num" data-count="4">0</span>
-          <span class="stat-label">User Roles in Flagship App</span>
+          <span class="stat-label">Production-grade Business Systems</span>
         </div>
         <div class="stat-card">
           <span class="stat-num" data-count="10">0</span><span class="stat-suffix">+</span>
           <span class="stat-label">Flutter Apps Shipped &amp; Prototyped</span>
         </div>
         <div class="stat-card">
-          <span class="stat-num" data-count="2">0</span>
-          <span class="stat-label">Companies Worked With</span>
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Platforms: Android · Windows · Web</span>
         </div>
       </div>
     </div>
@@ -114,41 +131,71 @@
     </div>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <h3>Mobile</h3>
+        <h3>Mobile &amp; Desktop</h3>
         <div class="pills">
           <span class="pill">Flutter</span>
           <span class="pill">Dart</span>
-          <span class="pill">Bloc</span>
-          <span class="pill">Provider</span>
-          <span class="pill">Clean Architecture</span>
+          <span class="pill">Material 3</span>
+          <span class="pill">Responsive Shells</span>
+          <span class="pill">Arabic RTL · i18n</span>
+          <span class="pill">Windows Desktop</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3>Backend &amp; Cloud</h3>
+        <h3>State &amp; Architecture</h3>
         <div class="pills">
-          <span class="pill">Firebase Firestore</span>
-          <span class="pill">Firebase Auth</span>
-          <span class="pill">Firebase Storage</span>
+          <span class="pill">Bloc / Cubit</span>
+          <span class="pill">Riverpod</span>
+          <span class="pill">Clean Architecture</span>
+          <span class="pill">Repository Pattern</span>
+          <span class="pill">get_it</span>
+          <span class="pill">go_router</span>
+          <span class="pill">Freezed</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Firebase</h3>
+        <div class="pills">
+          <span class="pill">Firestore</span>
+          <span class="pill">Auth</span>
+          <span class="pill">Storage</span>
           <span class="pill">Cloud Messaging</span>
+          <span class="pill">App Check</span>
+          <span class="pill">Crashlytics</span>
+          <span class="pill">Security Rules</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Supabase &amp; SQL</h3>
+        <div class="pills">
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Row Level Security</span>
+          <span class="pill">RPC Functions</span>
+          <span class="pill">Edge Functions</span>
+          <span class="pill">Realtime</span>
+          <span class="pill">Migrations</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Web</h3>
+        <div class="pills">
+          <span class="pill">Next.js</span>
+          <span class="pill">React</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Cloudflare Workers</span>
           <span class="pill">REST APIs</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3>Tools</h3>
+        <h3>Quality &amp; Tools</h3>
         <div class="pills">
+          <span class="pill">Unit &amp; Widget Tests</span>
+          <span class="pill">Rules Testing</span>
           <span class="pill">Git &amp; GitHub</span>
           <span class="pill">Android Studio</span>
           <span class="pill">VS Code</span>
           <span class="pill">Postman</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h3>Practices</h3>
-        <div class="pills">
-          <span class="pill">Agile / Scrum</span>
-          <span class="pill">UI/UX Principles</span>
-          <span class="pill">Role-Based Access Control</span>
-          <span class="pill">Real-time Sync</span>
         </div>
       </div>
     </div>
@@ -161,116 +208,261 @@
       <h2>Projects that ship, not tutorials that sit</h2>
     </div>
 
-    <!-- FEATURED: app_alfardos -->
-    <div class="project-feature reveal">
+    <!-- FEATURED: Mokoji -->
+    <article class="project-feature reveal">
       <div class="project-media">
-        <div class="phone-stack" id="alfardos-gallery">
-          <img src="assets/screenshots/Image1.jpeg" class="phone-shot active" alt="Al-Fardos app screenshot 1">
-          <img src="assets/screenshots/Image2.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 2">
-          <img src="assets/screenshots/Image3.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 3">
-          <img src="assets/screenshots/Image4.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 4">
-          <img src="assets/screenshots/Image5.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 5">
-          <img src="assets/screenshots/Image6.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 6">
-          <img src="assets/screenshots/Image7.jpeg" class="phone-shot" alt="Al-Fardos app screenshot 7">
+        <div class="device-combo">
+          <div class="device-desktop">
+            <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span>Mokoji · Admin</span></div>
+            <div class="gallery" data-gallery data-interval="3600" data-dots="mokoji-dots">
+              <img src="assets/projects/mokoji/desktop-dashboard.webp" class="slide active" width="1280" height="800" alt="Mokoji admin dashboard: cash balance, daily and monthly sales, active repairs and low stock">
+              <img src="assets/projects/mokoji/desktop-warehouse.webp" class="slide" width="1280" height="800" loading="lazy" alt="Mokoji warehouse: quantities, stock value at cost, receive and issue movements">
+              <img src="assets/projects/mokoji/desktop-cashbox.webp" class="slide" width="1280" height="800" loading="lazy" alt="Mokoji cashbox with an append-only movement log">
+              <img src="assets/projects/mokoji/desktop-products.webp" class="slide" width="1280" height="800" loading="lazy" alt="Mokoji product management with prices, images and featured items">
+            </div>
+          </div>
+          <div class="device-phone">
+            <div class="gallery" data-gallery data-interval="2800">
+              <img src="assets/projects/mokoji/customer-home.webp" class="slide active" width="600" height="1298" alt="Mokoji customer home with offers and shortcuts">
+              <img src="assets/projects/mokoji/customer-store.webp" class="slide" width="600" height="1298" loading="lazy" alt="Mokoji store with categories, search and filters">
+              <img src="assets/projects/mokoji/customer-product.webp" class="slide" width="600" height="1298" loading="lazy" alt="Mokoji product page with stock status">
+              <img src="assets/projects/mokoji/customer-maintenance.webp" class="slide" width="600" height="1298" loading="lazy" alt="Mokoji repair request with live queue position">
+              <img src="assets/projects/mokoji/technician-jobs.webp" class="slide" width="600" height="1298" loading="lazy" alt="Mokoji technician repair jobs list">
+              <img src="assets/projects/mokoji/technician-bag.webp" class="slide" width="600" height="1298" loading="lazy" alt="Mokoji technician personal stock bag">
+            </div>
+          </div>
+        </div>
+        <div class="dots" id="mokoji-dots"></div>
+      </div>
+      <div class="project-info">
+        <div class="badges">
+          <span class="badge badge-new">★ Newest</span>
+          <span class="badge">Supabase · Row Level Security</span>
+        </div>
+        <h3>Mokoji — Store, Repairs &amp; Back Office</h3>
+        <p>
+          A steam-iron store and repair service in one Flutter app, sitting on top of a complete
+          back office. Customers shop and request repairs, technicians handle jobs and sell from
+          their own stock, and the admin runs inventory, sales, cash and reports — three roles,
+          one database.
+        </p>
+        <ul class="feature-list">
+          <li>Every permission enforced in PostgreSQL via RLS — even direct API calls see only what the role allows</li>
+          <li>Sensitive operations (sales, stock issues, repairs) run only through atomic <code>SECURITY DEFINER</code> RPCs</li>
+          <li>Append-only ledgers for cash and stock, price snapshots on every sale, private photos via signed URLs</li>
+          <li>Cart &amp; checkout, wallet, InstaPay and refunds; live repair queue; FCM push through an Edge Function</li>
+        </ul>
+        <div class="metric-row">
+          <div><strong>46</strong><span>tables</span></div>
+          <div><strong>55</strong><span>RPC functions</span></div>
+          <div><strong>74</strong><span>migrations</span></div>
+          <div><strong>~31k</strong><span>lines of Dart</span></div>
+        </div>
+        <div class="tech-row">
+          <span class="tech">Flutter</span><span class="tech">Riverpod 3</span><span class="tech">go_router</span>
+          <span class="tech">Freezed</span><span class="tech">Supabase</span><span class="tech">PostgreSQL</span><span class="tech">FCM</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/osama-Yosef/steam-gallery-app" target="_blank" rel="noopener" class="btn btn-ghost small">App on GitHub ↗</a>
+          <a href="https://github.com/osama-Yosef/-Release" target="_blank" rel="noopener" class="btn btn-ghost small">Website (Next.js) ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURED: Al-Fardos Factory -->
+    <article class="project-feature reverse reveal">
+      <div class="project-media">
+        <div class="media-frame">
+          <div class="gallery" data-gallery data-interval="3200" data-dots="alfardos-dots">
+            <img src="assets/screenshots/Image1.jpeg" class="slide active" alt="Al-Fardos Factory: order form and pricing screens">
+            <img src="assets/screenshots/Image2.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: new order with drawings upload and cost breakdown">
+            <img src="assets/screenshots/Image3.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: admin dashboard counters">
+            <img src="assets/screenshots/Image4.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: splash and role-based sign in">
+            <img src="assets/screenshots/Image5.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: pricing form and order chat">
+            <img src="assets/screenshots/Image6.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: client home with production progress">
+            <img src="assets/screenshots/Image7.jpeg" class="slide" loading="lazy" alt="Al-Fardos Factory: in-app customer support chat">
+          </div>
         </div>
         <div class="dots" id="alfardos-dots"></div>
       </div>
       <div class="project-info">
         <span class="badge badge-live">🟢 Live in production</span>
-        <h3>Al-Fardos Factory Management System</h3>
+        <h3>Al-Fardos Factory — Order Management System</h3>
         <p>
-          A full-scale Flutter system that digitizes the entire order lifecycle of a real
-          metal-processing factory — from the client's request, through engineering review
-          and pricing, to execution on the factory floor. Built for daily use by an actual
-          manufacturing business, not as a demo.
+          The Flutter system that digitizes the entire order lifecycle of a real metal-processing
+          factory — from the client's request, through engineering review and pricing, to execution
+          on the factory floor. It replaced phone calls, WhatsApp threads and paper notes, and it's
+          used every day.
         </p>
         <ul class="feature-list">
-          <li>4 tailored interfaces: Client, Engineer, Admin/Accounting, Floor Worker</li>
+          <li>4 tailored interfaces in one app: Client, Engineer, Office (Admin/Accounting), Floor Worker</li>
           <li>Real-time order tracking that propagates instantly across every role</li>
-          <li>In-app chat per order, file &amp; drawing uploads, deposit payment flow</li>
-          <li>Admin dashboard with live KPIs and full order history</li>
+          <li>In-app chat per order, drawing &amp; photo uploads, price breakdown and deposit flow</li>
+          <li>Push notifications on every status change; admin dashboard with live counters</li>
         </ul>
         <div class="tech-row">
-          <span class="tech">Flutter</span><span class="tech">Dart</span><span class="tech">Bloc</span>
-          <span class="tech">Firestore</span><span class="tech">Firebase Auth</span><span class="tech">Firebase Storage</span>
+          <span class="tech">Flutter</span><span class="tech">Bloc / Cubit</span><span class="tech">Firestore</span>
+          <span class="tech">Firebase Auth</span><span class="tech">FCM</span><span class="tech">Cloudinary</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/osama-Yosef/app_alfardos" target="_blank" rel="noopener" class="btn btn-ghost small">Code on GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!-- FEATURED: length-factory -->
-    <div class="project-feature reverse reveal">
+    <!-- FEATURED: Al-Fardos Management -->
+    <article class="project-feature reveal">
       <div class="project-media">
-        <div class="arch-card">
-          <div class="arch-row"><span>Presentation</span><em>Admin · Customer · Worker</em></div>
-          <div class="arch-arrow">↓</div>
-          <div class="arch-row"><span>Domain</span><em>Pure Dart entities, zero Firebase deps</em></div>
-          <div class="arch-arrow">↓</div>
-          <div class="arch-row"><span>Data</span><em>Repositories + Models (atomic transactions)</em></div>
-          <div class="arch-arrow">↓</div>
-          <div class="arch-row highlight"><span>Firebase</span><em>Auth · Firestore · Storage</em></div>
+        <div class="device-combo">
+          <div class="device-desktop">
+            <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span>Al-Fardos Management · Windows</span></div>
+            <div class="gallery" data-gallery data-interval="3600" data-dots="management-dots">
+              <img src="assets/projects/alfardos-management/dashboard.webp" class="slide active" width="1280" height="800" loading="lazy" alt="Al-Fardos Management dashboard: cash balance, sales, profit, debts and quick actions">
+              <img src="assets/projects/alfardos-management/sales.webp" class="slide" width="1280" height="800" loading="lazy" alt="Sales invoices: paid, partly paid and credit with outstanding amounts">
+              <img src="assets/projects/alfardos-management/new-invoice.webp" class="slide" width="1280" height="800" loading="lazy" alt="New sale invoice with products, services, discount and payment type">
+              <img src="assets/projects/alfardos-management/sale-invoice.webp" class="slide" width="1280" height="800" loading="lazy" alt="Invoice details with cost and profit per line">
+              <img src="assets/projects/alfardos-management/reports.webp" class="slide" width="1280" height="800" loading="lazy" alt="Reports: profit, sales, purchases, expenses, debts, stock and journal">
+              <img src="assets/projects/alfardos-management/cashboxes.webp" class="slide" width="1280" height="800" loading="lazy" alt="Cashboxes: cash, bank and e-wallet accounts">
+            </div>
+          </div>
+          <div class="device-phone">
+            <div class="gallery" data-gallery>
+              <img src="assets/projects/alfardos-management/mobile-dashboard.webp" class="slide active" width="600" height="1298" loading="lazy" alt="Al-Fardos Management on Android with a bottom navigation bar">
+            </div>
+          </div>
         </div>
+        <div class="dots" id="management-dots"></div>
+      </div>
+      <div class="project-info">
+        <span class="badge">Double-entry Accounting</span>
+        <h3>Al-Fardos Management — Accounting &amp; ERP</h3>
+        <p>
+          Arabic accounting and business management for small and medium businesses: sales and
+          purchase invoices, customers and suppliers, cashboxes, expenses, stock and reports — all
+          posted through one double-entry ledger so the numbers always add up.
+        </p>
+        <ul class="feature-list">
+          <li>Every operation is one balanced posting written in a single atomic Firestore transaction — balances, stock, stats and audit trail together, or nothing</li>
+          <li>Idempotent posting (a double tap or retry never posts twice); money stored as integer minor units</li>
+          <li>Security rules forbid deletes and unbalanced writes — covered by emulator tests; pure-Dart accounting core fully unit-tested</li>
+          <li>Custom roles &amp; granular permissions, audit log, Arabic PDF invoices, Excel/CSV export, manufactured products from recipes</li>
+        </ul>
+        <div class="tech-row">
+          <span class="tech">Flutter</span><span class="tech">Riverpod</span><span class="tech">go_router</span>
+          <span class="tech">Firestore</span><span class="tech">App Check</span><span class="tech">fl_chart</span><span class="tech">Windows · Android</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/osama-Yosef/Alfardos-Management" target="_blank" rel="noopener" class="btn btn-ghost small">Code on GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURED: Length Factory -->
+    <article class="project-feature reverse reveal">
+      <div class="project-media">
+        <div class="phone-pair">
+          <div class="device-phone back">
+            <div class="gallery" data-gallery data-interval="3000">
+              <img src="assets/projects/length-factory/customer-store.webp" class="slide active" width="600" height="1298" loading="lazy" alt="Length Factory customer catalog">
+              <img src="assets/projects/length-factory/customer-checkout.webp" class="slide" width="600" height="1298" loading="lazy" alt="Length Factory checkout on account">
+              <img src="assets/projects/length-factory/worker-queue.webp" class="slide" width="600" height="1298" loading="lazy" alt="Length Factory worker production queue without prices">
+            </div>
+          </div>
+          <div class="device-phone front">
+            <div class="gallery" data-gallery data-interval="3400" data-dots="length-dots">
+              <img src="assets/projects/length-factory/admin-dashboard.webp" class="slide active" width="600" height="1298" loading="lazy" alt="Length Factory admin dashboard">
+              <img src="assets/projects/length-factory/admin-dashboard-charts.webp" class="slide" width="600" height="1298" loading="lazy" alt="Length Factory 7-day sales and order status charts">
+              <img src="assets/projects/length-factory/admin-orders.webp" class="slide" width="600" height="1298" loading="lazy" alt="Length Factory orders with search and filters">
+            </div>
+          </div>
+        </div>
+        <div class="dots" id="length-dots"></div>
       </div>
       <div class="project-info">
         <span class="badge">Clean Architecture</span>
         <h3>Length Factory — Order &amp; Inventory System</h3>
         <p>
-          A second, independently-architected factory management platform — built to prove
-          the first wasn't a fluke. Strict Clean Architecture with a domain layer that has
-          zero Firebase dependencies, full Arabic RTL support, and Firestore security rules
-          enforced at the database level, not just the UI.
+          A second, independently-architected factory platform — built to prove the first wasn't a
+          fluke. Admins run products, orders, customers and payments; customers order from a live
+          catalog; workers see only the production queue, never a price.
         </p>
         <ul class="feature-list">
-          <li>3 roles (Admin / Customer / Worker) with atomic checkout transactions</li>
+          <li>Strict <code>data / domain / presentation</code> layers with Cubit, <code>get_it</code> and <code>Either</code>-based error handling</li>
+          <li>Checkout, payments and cancellations run inside single Firestore transactions — balance and stock never drift</li>
           <li>Firestore security rules mirror UI permissions — workers can never read prices</li>
-          <li>PDF export, QR codes, and live charts via fl_chart</li>
-          <li>Ships to both Android and Windows Desktop from one codebase</li>
+          <li>PDF invoices and live charts; one codebase for Android and Windows Desktop</li>
         </ul>
         <div class="tech-row">
-          <span class="tech">Flutter</span><span class="tech">Provider</span><span class="tech">go_router</span>
-          <span class="tech">Firestore</span><span class="tech">Material 3</span><span class="tech">Windows Desktop</span>
+          <span class="tech">Flutter</span><span class="tech">Cubit</span><span class="tech">get_it</span><span class="tech">dartz</span>
+          <span class="tech">go_router</span><span class="tech">Firestore</span><span class="tech">Windows Desktop</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/osama-Yosef/length-factory" target="_blank" rel="noopener" class="btn btn-ghost small">Code on GitHub ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- OTHER PROJECTS -->
     <h3 class="sub-heading reveal">More builds</h3>
     <div class="grid-cards">
-      <a class="mini-card reveal" href="https://github.com/osama-Yosef/Smart_Institute_App" target="_blank" rel="noopener">
-        <div class="mini-icon">🏫</div>
-        <h4>Smart Institute App</h4>
-        <p>Dual-role learning platform for doctors and students — onboarding, course browsing, and student progress tracking.</p>
-        <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">Role-based UI</span></div>
+      <a class="shot-card reveal" href="https://github.com/osama-Yosef/Eyan" target="_blank" rel="noopener">
+        <div class="shot-thumb"><img src="assets/projects/eyan/cover.webp" width="960" height="516" loading="lazy" alt="Eyan doctor booking app screens"></div>
+        <div class="shot-body">
+          <span class="mini-status">UI complete · backend next</span>
+          <h4>Eyan — Doctor Booking</h4>
+          <p>Find a doctor by name or specialty, pick a free slot, track appointments, read prescriptions and chat with the doctor. Full Arabic / English with live RTL ↔ LTR switching.</p>
+          <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">i18n · RTL</span><span class="tech">Zero 3rd-party deps</span></div>
+        </div>
       </a>
+      <a class="shot-card reveal" href="https://github.com/osama-Yosef/-Release" target="_blank" rel="noopener">
+        <div class="shot-thumb"><img src="assets/projects/mokoji-web/home.webp" width="1280" height="800" loading="lazy" alt="Mokoji public website home page"></div>
+        <div class="shot-body">
+          <span class="mini-status">Companion website</span>
+          <h4>Mokoji Website</h4>
+          <p>The public shop window for Mokoji: live catalog from the same Supabase DB via read-only RPCs, rate-limited Arabic search with normalization, APK download with QR, full SEO.</p>
+          <div class="tech-row small"><span class="tech">Next.js 16</span><span class="tech">TypeScript</span><span class="tech">Tailwind 4</span><span class="tech">Cloudflare</span></div>
+        </div>
+      </a>
+      <a class="shot-card reveal" href="https://github.com/osama-Yosef/Smart_Institute_App" target="_blank" rel="noopener">
+        <div class="shot-thumb"><img src="assets/projects/smart-institute/cover.webp" width="960" height="516" loading="lazy" alt="Smart Institute app screens"></div>
+        <div class="shot-body">
+          <span class="mini-status">Two roles</span>
+          <h4>Smart Institute</h4>
+          <p>Student and doctor portal: GPA, credit hours and weekly schedule for students; searchable student files and course registration for doctors.</p>
+          <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">ScreenUtil</span><span class="tech">Role-based UI</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="grid-cards compact">
       <a class="mini-card reveal" href="https://github.com/osama-Yosef/Bokia_store" target="_blank" rel="noopener">
         <div class="mini-icon">📚</div>
         <h4>Book Store</h4>
-        <p>Bookstore shopping app with auth, cart, bookmarking, and profile management across a clean feature-first structure.</p>
+        <p>Bookstore app with auth, cart, bookmarking and profile in a clean feature-first structure.</p>
         <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">Feature-first</span></div>
       </a>
       <a class="mini-card reveal" href="https://github.com/osama-Yosef/taskaty-app" target="_blank" rel="noopener">
         <div class="mini-icon">✅</div>
         <h4>Taskati</h4>
-        <p>A to-do / task management app with add-task flow, profile, and animated splash screen.</p>
+        <p>To-do and task management with add-task flow, profile and animated splash.</p>
         <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">State Mgmt</span></div>
       </a>
       <a class="mini-card reveal" href="https://github.com/osama-Yosef/first_app" target="_blank" rel="noopener">
         <div class="mini-icon">🧮</div>
         <h4>BMI Calculator</h4>
-        <p>Clean, responsive BMI calculator with dynamic results and health-range indicators — a UI/UX demonstration piece.</p>
+        <p>Responsive BMI calculator with dynamic results and health-range indicators.</p>
         <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">Clean UI</span></div>
       </a>
       <a class="mini-card reveal" href="https://github.com/osama-Yosef/profile-screen-ui" target="_blank" rel="noopener">
         <div class="mini-icon">👤</div>
         <h4>Profile Screen UI</h4>
-        <p>Polished, pixel-perfect profile screen build focused purely on layout precision and UI craftsmanship.</p>
+        <p>Pixel-perfect profile screen focused on layout precision and UI craftsmanship.</p>
         <div class="tech-row small"><span class="tech">Flutter</span><span class="tech">UI Craft</span></div>
       </a>
+    </div>
+
+    <div class="more-link reveal">
+      <a href="https://github.com/osama-Yosef?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">All repositories on GitHub ↗</a>
     </div>
   </section>
 
@@ -288,9 +480,10 @@
           <h3>Flutter Developer · Al-Fardos Metal Factory</h3>
           <p class="timeline-sub">Cairo, Egypt — Family business, factory management &amp; operations</p>
           <ul>
-            <li>Designed and built app_alfardos from scratch as a production tool used daily by factory staff and clients</li>
-            <li>Maintained and iterated the app based on real user feedback from engineers and floor workers</li>
-            <li>Managed the Firebase backend: Firestore schema design, security rules, and storage</li>
+            <li>Designed and built Al-Fardos Factory from scratch as a production tool used daily by factory staff and clients</li>
+            <li>Built Al-Fardos Management, a double-entry accounting system for Windows and Android, with tested ledger logic and security rules</li>
+            <li>Maintained and iterated both apps based on real feedback from engineers, accountants and floor workers</li>
+            <li>Owned the Firebase backend: Firestore schema design, security rules, storage and push notifications</li>
           </ul>
         </div>
       </div>
@@ -345,6 +538,9 @@
         <a href="https://linkedin.com/in/osama-yosef-819268319" target="_blank" rel="noopener" class="contact-link">
           <span class="contact-label">LinkedIn</span> osama-yosef-819268319
         </a>
+        <a href="https://upwork.com/freelancers/~014ebd205ef38ca04c" target="_blank" rel="noopener" class="contact-link span-2">
+          <span class="contact-label">Upwork</span> Hire me for your next Flutter project
+        </a>
       </div>
       <a href="assets/docs/Osama_Yosef_CV.docx" download class="btn btn-primary big">Download Full CV ⭳</a>
     </div>
@@ -355,6 +551,17 @@
 <footer>
   <p>Designed &amp; built by Osama Yosef · © <span id="year"></span></p>
 </footer>
+
+<!-- Screenshot lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+  <button class="lb-btn lb-close" data-lb="close" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" data-lb="prev" aria-label="Previous screenshot">‹</button>
+  <figure>
+    <img id="lightbox-img" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" data-lb="next" aria-label="Next screenshot">›</button>
+</div>
 
 <script src="script.js"></script>
 </body>
