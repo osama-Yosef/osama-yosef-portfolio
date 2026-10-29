@@ -778,3 +778,13 @@ body.no-scroll { overflow: hidden; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* landscape product previews (light UI on a light canvas) */
+.media-frame.landscape {
+  max-width: 560px;
+  aspect-ratio: 4/3;
+  background: #ffffff;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.media-frame.landscape .slide { object-fit: contain; object-position: center; padding: 14px; }
+.media-note { margin-top: 10px; font-size: 0.75rem; color: var(--text-dim); text-align: center; }

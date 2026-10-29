@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2" />
+<link rel="stylesheet" href="style.css?v=3" />
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -52,8 +52,8 @@
       <h2 class="typewriter"><span id="typewriter-text"></span><span class="cursor">|</span></h2>
       <p class="hero-desc">
         I build production-grade Flutter systems that real businesses run on — not tutorial
-        projects. A factory's full order pipeline, a double-entry accounting system, and a
-        store + repair platform with its own back office, all Arabic-first and cross-platform.
+        projects. A commercial ERP sold to multiple businesses, a factory's full order pipeline,
+        and a store + repair platform with its own back office, all Arabic-first and cross-platform.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -98,6 +98,11 @@
           live in PostgreSQL itself through Row Level Security.
         </p>
         <p>
+          My latest product, <strong>Eltip ERP</strong>, is a commercial accounting system sold to
+          multiple businesses: each client gets an isolated backend, a signed activation code, and an
+          app that keeps working offline.
+        </p>
+        <p>
           I own products end-to-end — schema design, security rules, business logic, tests and the UI
           that ties it together. Computer Science graduate (2026), now freelancing and open to Flutter roles.
         </p>
@@ -108,7 +113,7 @@
           <span class="stat-label">Years Professional Experience</span>
         </div>
         <div class="stat-card">
-          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-num" data-count="5">0</span>
           <span class="stat-label">Production-grade Business Systems</span>
         </div>
         <div class="stat-card">
@@ -208,8 +213,58 @@
       <h2>Projects that ship, not tutorials that sit</h2>
     </div>
 
-    <!-- FEATURED: Mokoji -->
+    <!-- FEATURED: Eltip ERP -->
     <article class="project-feature reveal">
+      <div class="project-media">
+        <div class="media-frame landscape">
+          <div class="gallery" data-gallery data-interval="3600" data-dots="eltip-dots">
+            <img src="assets/projects/eltip/hero.webp" class="slide active" width="1200" height="898" alt="Eltip ERP dashboard on desktop with a new sales invoice on mobile">
+            <img src="assets/projects/eltip/sales.webp" class="slide" width="1200" height="554" loading="lazy" alt="Eltip ERP sales invoice with items, discount and partial payment">
+            <img src="assets/projects/eltip/inventory.webp" class="slide" width="1200" height="554" loading="lazy" alt="Eltip ERP inventory and products module">
+            <img src="assets/projects/eltip/reports.webp" class="slide" width="1200" height="566" loading="lazy" alt="Eltip ERP monthly profit report: revenue, cost of goods, expenses and stock-count shortage">
+            <img src="assets/projects/eltip/security.webp" class="slide" width="1200" height="615" loading="lazy" alt="Eltip ERP role permissions for a cashier">
+          </div>
+        </div>
+        <div class="dots" id="eltip-dots"></div>
+        <p class="media-note">UI previews from the Eltip website</p>
+      </div>
+      <div class="project-info">
+        <div class="badges">
+          <span class="badge badge-new">★ Newest</span>
+          <span class="badge badge-live">Commercial product</span>
+        </div>
+        <h3>Eltip ERP — Accounting &amp; Business Management</h3>
+        <p>
+          An Arabic accounting and ERP system for shops and small-to-medium businesses, sold to
+          multiple clients under a perpetual license. Each client's data lives in their own Firebase
+          project on their own Google account, and one Windows + Android app connects to it from a
+          signed activation code.
+        </p>
+        <ul class="feature-list">
+          <li>Per-client isolation with Ed25519-signed activation codes, plus a web Control Center to provision clients, upgrade editions, suspend licenses and announce releases — without ever reading client financials</li>
+          <li>Offline-first: sales, purchases, collections and expenses are saved in an encrypted on-device queue with per-device numbering, then posted exactly once when the connection returns</li>
+          <li>Double-entry engine: every posting is one Firestore transaction that security rules reject if unbalanced; reversing entries instead of deletes; stock and numbering per branch</li>
+          <li>In-app TOTP two-factor auth with backup codes, granular role permissions, audit log, and AES-256-GCM encrypted backups with restore and reconciliation tools</li>
+        </ul>
+        <div class="metric-row">
+          <div><strong>~38k</strong><span>lines of Dart</span></div>
+          <div><strong>21</strong><span>feature modules</span></div>
+          <div><strong>40</strong><span>test files</span></div>
+          <div><strong>2</strong><span>editions</span></div>
+        </div>
+        <div class="tech-row">
+          <span class="tech">Flutter</span><span class="tech">Riverpod</span><span class="tech">go_router</span>
+          <span class="tech">Drift · SQLite</span><span class="tech">Firestore</span><span class="tech">App Check</span><span class="tech">Next.js</span><span class="tech">Windows · Android</span>
+        </div>
+        <div class="project-links">
+          <a href="https://eltip-web.web.app/" target="_blank" rel="noopener" class="btn btn-primary small">Product website ↗</a>
+          <a href="https://github.com/osama-Yosef/Eltip-ERP-Releases/releases/latest" target="_blank" rel="noopener" class="btn btn-ghost small">Download ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURED: Mokoji -->
+    <article class="project-feature reverse reveal">
       <div class="project-media">
         <div class="device-combo">
           <div class="device-desktop">
@@ -236,7 +291,6 @@
       </div>
       <div class="project-info">
         <div class="badges">
-          <span class="badge badge-new">★ Newest</span>
           <span class="badge">Supabase · Row Level Security</span>
         </div>
         <h3>Mokoji — Store, Repairs &amp; Back Office</h3>
@@ -271,7 +325,7 @@
     </article>
 
     <!-- FEATURED: Al-Fardos Factory -->
-    <article class="project-feature reverse reveal">
+    <article class="project-feature reveal">
       <div class="project-media">
         <div class="media-frame">
           <div class="gallery" data-gallery data-interval="3200" data-dots="alfardos-dots">
@@ -312,7 +366,7 @@
     </article>
 
     <!-- FEATURED: Al-Fardos Management -->
-    <article class="project-feature reveal">
+    <article class="project-feature reverse reveal">
       <div class="project-media">
         <div class="device-combo">
           <div class="device-desktop">
@@ -359,7 +413,7 @@
     </article>
 
     <!-- FEATURED: Length Factory -->
-    <article class="project-feature reverse reveal">
+    <article class="project-feature reveal">
       <div class="project-media">
         <div class="phone-pair">
           <div class="device-phone back">
@@ -564,6 +618,6 @@
   <button class="lb-btn lb-next" data-lb="next" aria-label="Next screenshot">›</button>
 </div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
